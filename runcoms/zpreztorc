@@ -31,8 +31,16 @@ zstyle ':prezto:load' pmodule \
   'directory' \
   'spectrum' \
   'utility' \
+  'gnu-utility' \
   'completion' \
-  'prompt'
+  'prompt' \
+  'tmux' \
+  'syntax-highlighting' \
+  'git' \
+  'node' \
+  'ssh' \
+  'osx' \
+  'homebrew'
 
 #
 # Editor
