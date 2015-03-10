@@ -43,8 +43,11 @@ zstyle ':prezto:load' pmodule \
   'homebrew'
 
 #
-# Editor
+# Editors
 #
+export EDITOR='vim'
+export VISUAL='vim'
+export PAGER='less'
 
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'emacs'
@@ -162,4 +165,4 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
-# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+zstyle ':prezto:module:tmux:iterm' integrate 'yes'
