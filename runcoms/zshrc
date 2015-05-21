@@ -19,6 +19,7 @@ alias tree="tree|ascii2uni -a K"
 alias proxy="proxychains4"
 alias douban.fm="douban.fm home /Users/niksun/Music/douban.fm"
 alias sl="sl"
+alias rm="trash"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export DYLD_LIBRARY_PATH="/usr/local/mariadb/lib"
@@ -29,7 +30,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # for dev
 export DEV_DATABASE_URI="mysql://root:12121212@localhost:3306/shop-dev"
-export ANDROID_HOME=/Users/niksun/Library/Developer/Xamarin/android-sdk-macosx/
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
 BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
