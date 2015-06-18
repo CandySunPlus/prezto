@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 
 export CURL_CA_BUNDLE=~/.ssh/cacert.pem
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
 export DOCKER_HOST=tcp://172.17.8.150:2375
 alias tree="tree|ascii2uni -a K"
 alias proxy="proxychains4"
@@ -29,8 +29,11 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 
 # for dev
-export DEV_DATABASE_URI="mysql://root:12121212@localhost:3306/shop-dev"
+export DEV_DATABASE_URI="mysql://root:12121212@localhost:3306/asvip"
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
+
+source ~/.config/git-flow-completion/git-flow-completion.zsh
+
