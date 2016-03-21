@@ -43,7 +43,14 @@ zstyle ':prezto:load' pmodule \
   'homebrew'
 
 #
-# Editors
+# Autosuggestions
+#
+
+# Set the query found color.
+# zstyle ':prezto:module:autosuggestions:color' found ''
+
+#
+# Editor
 #
 export EDITOR='vim'
 export VISUAL='vim'
@@ -132,6 +139,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #   'main' \
 #   'brackets' \
 #   'pattern' \
+#   'line' \
 #   'cursor' \
 #   'root'
 #
