@@ -13,13 +13,14 @@ fi
 # Customize to your needs...
 
 export CURL_CA_BUNDLE=~/.ssh/cacert.pem
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 export DOCKER_HOST=tcp://172.17.8.150:2375
+alias emacs="/usr/local/bin/emacs"
 alias tree="tree|ascii2uni -a K"
 alias proxy="proxychains4"
 alias douban.fm="douban.fm home /Users/niksun/Music/douban.fm"
 alias sl="sl"
-alias rm="trash"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export DYLD_LIBRARY_PATH="/usr/local/mariadb/lib"
@@ -31,9 +32,13 @@ source /usr/local/bin/virtualenvwrapper.sh
 # for dev
 export DEV_DATABASE_URI="mysql://root:12121212@localhost:3306/asvip"
 export ANDROID_HOME=/usr/local/opt/android-sdk
+export MONO_GAC_PREFIX='/Library/Frameworks/Mono.framework/Versions/Current/'
 
-BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
-[[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
+# BASE16_SHELL="$HOME/.config/base16-shell/base16-tomorrow.dark.sh"
+# [[ -s $BASE16_SHELL  ]] && source $BASE16_SHELL
 
-source ~/.config/git-flow-completion/git-flow-completion.zsh
 
+export XDG_CONFIG_HOME=~/.config
+export NVM_DIR="/Users/niksun/.nvm"
+export CODE_TSJS=1
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
