@@ -56,6 +56,18 @@ path=(
 
 export PKG_CONFIG_PATH=/Library/Frameworks/Mono.framework/External/pkgconfig:/Library/Frameworks/Mono.framework/Versions/Current/lib/pkgconfig:/Library/Frameworks/Mono.framework/Versions/Current/share/pkgconfig:$PKG_CONFIG_PATH
 
+# For vmux
+
+export VMUX_EDITOR=nvim
+export VMUX_REALEDITOR_NVIM=/usr/local/bin/nvim
+export VMUX_REALEDITOR_VIM=/usr/local/bin/vim
+export VMUX_REALEDITOR_GVIM=/usr/local/bin/gvim
+
+#
+# Homebrew
+#
+export HOMEBREW_GITHUB_API_TOKEN="99c07e375a5f12a453b7de071381d324e42aed77"
+
 #
 # Less
 #
