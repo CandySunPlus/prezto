@@ -24,6 +24,7 @@ alias emacs="/usr/local/bin/emacs"
 # alias tree="tree $@|ascii2uni -a K"
 alias tree=treeFunc
 alias proxy="proxychains4"
+alias gdb="gdb -q"
 alias douban.fm="douban.fm home /Users/niksun/Music/douban.fm"
 alias sl="sl"
 
