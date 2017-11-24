@@ -9,40 +9,25 @@
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
-# Customize to your needs...
-treeFunc() {
-    files=$@
-    tree $files | ascii2uni -a K
-}
-
-export CURL_CA_BUNDLE=~/.ssh/cacert.pem
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home
-export DOCKER_HOST=tcp://172.17.8.150:2375
-alias emacs="/usr/local/bin/emacs"
-# alias tree="tree $@|ascii2uni -a K"
-alias tree=treeFunc
-alias proxy="proxychains4"
+export CURL_CA_BUNDLE=/etc/ssl/cert.pem
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
 alias gdb="gdb -q"
-alias douban.fm="douban.fm home /Users/niksun/Music/douban.fm"
-alias sl="sl"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export DYLD_LIBRARY_PATH="/usr/local/mariadb/lib"
 
 export WORKON_HOME=$HOME/development/study/python/virtualenvs
 # source /usr/local/bin/virtualenvwrapper.sh
 
-
-# for dev
-export DEV_DATABASE_URI="mysql://root:12121212@localhost:3306/asvip"
 export MONO_GAC_PREFIX='/Library/Frameworks/Mono.framework/Versions/Current/'
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-
 export XDG_CONFIG_HOME=~/.config
+
+export NVM_DIR="$HOME/.nvm"
+export NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+export ELECTRON_MIRROR=https://npm.taobao.org/mirrors/electron/
+export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
