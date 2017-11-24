@@ -1,8 +1,5 @@
 *.zwc
 *.zwc.old
 modules/*/cache.zsh
-<<<<<<< HEAD
 .DS_Store
-=======
 contrib
->>>>>>> 221c6cd1283654ba77db052ee27aef613395321c
