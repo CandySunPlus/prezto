@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nvim'
-export VISUAL='nvim'
+export EDITOR='vim'
+export VISUAL='vim'
 export PAGER='less'
 
 #
@@ -39,21 +39,18 @@ typeset -gU cdpath fpath mailpath path
 # cdpath=(
 #   $cdpath
 # )
+export GOPATH=~/.go
 
-# Spark ENV
-export SPARK_HOME=/usr/local/Cellar/apache-spark/1.6.0/libexec
-export PYSPARK_SUBMIT_ARGS="--master local[2]"
 # Set the list of directories that Zsh searches for programs.
 path=(
   /Users/niksun/.cargo/bin
   /Users/niksun/.yarn/bin
   /Users/niksun/development/golang/bin
+  /Users/niksun/.go/bin
+  /usr/local/opt/go/libexec/bin
   /usr/local/{bin,sbin}
-  /Library/Frameworks/Mono.framework/Versions/Current/bin
   $path
 )
-
-export PKG_CONFIG_PATH=/Library/Frameworks/Mono.framework/External/pkgconfig:/Library/Frameworks/Mono.framework/Versions/Current/lib/pkgconfig:/Library/Frameworks/Mono.framework/Versions/Current/share/pkgconfig:$PKG_CONFIG_PATH
 
 # For vmux
 
@@ -82,6 +79,7 @@ if (( $+commands[lesspipe.sh] )); then
 fi
 
 # Ensure that a non-login, non-interactive shell has a defined environment.
-if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
+if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
