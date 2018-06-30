@@ -39,16 +39,15 @@ typeset -gU cdpath fpath mailpath path
 # cdpath=(
 #   $cdpath
 # )
-export GOPATH=/usr/local/Cellar/go/1.3.1
 
 # Spark ENV
 export SPARK_HOME=/usr/local/Cellar/apache-spark/1.6.0/libexec
 export PYSPARK_SUBMIT_ARGS="--master local[2]"
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/Cellar/go/1.3.1/bin
-  /Users/niksun/Documents/src/zato-1.1/bin
-  /usr/local/mariadb/{bin,sbin}
+  /Users/niksun/.cargo/bin
+  /Users/niksun/.yarn/bin
+  /Users/niksun/development/golang/bin
   /usr/local/{bin,sbin}
   /Library/Frameworks/Mono.framework/Versions/Current/bin
   $path
