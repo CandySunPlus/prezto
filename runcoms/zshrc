@@ -10,7 +10,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 export CURL_CA_BUNDLE=/etc/ssl/cert.pem
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home
 alias gdb="gdb -q"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
@@ -26,9 +26,13 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export GOPATH="/Users/niksun/development/golang"
 
-export DRONE_SERVER=http://drone.wehaowu.com
-export DRONE_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0Ijoic3VuZmVuZ21pbmciLCJ0eXBlIjoidXNlciJ9.5gzR_jm2eWRgKVQUZegrewTKSSMBuUm8AhW51CLwmnk
+export DRONE_SERVER=https://drone.wehaowu.com
+export DRONE_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0Ijoic3VuZmVuZ21pbmciLCJ0eXBlIjoidXNlciJ9.upYOCG8lrx1cNb7-FTG_zNyHjaW0hQcookLplEARJxM
+
+alias proxy="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087" //会话全局设置
+alias unproxy="unset http_proxy;unset https_proxy" //撤销当前会话的http_proxy代理
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 export PAGER='less'
 
 #
@@ -39,14 +39,21 @@ typeset -gU cdpath fpath mailpath path
 # cdpath=(
 #   $cdpath
 # )
-export GOPATH=~/.go
 
 # Set the list of directories that Zsh searches for programs.
+
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
 path=(
   /Users/niksun/.cargo/bin
   /Users/niksun/.yarn/bin
   /Users/niksun/development/golang/bin
+  /Users/niksun/.opt/bin
   /Users/niksun/.go/bin
+  /Users/niksun/.pub-cache/bin
+  /usr/local/lib/ruby/gems/2.5.0/bin
+  /usr/local/opt/llvm/bin
   /usr/local/opt/go/libexec/bin
   /usr/local/{bin,sbin}
   $path
