@@ -71,6 +71,8 @@ export PAGER='less'
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':prezto:module:editor' key-bindings 'vi'
 
+bindkey '^R' history-incremental-search-backward
+
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
 
