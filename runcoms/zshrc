@@ -29,10 +29,12 @@ export GOPATH="/Users/niksun/development/golang"
 export DRONE_SERVER=https://drone.wehaowu.com
 export DRONE_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZXh0Ijoic3VuZmVuZ21pbmciLCJ0eXBlIjoidXNlciJ9.upYOCG8lrx1cNb7-FTG_zNyHjaW0hQcookLplEARJxM
 
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
 alias proxy="export http_proxy=http://127.0.0.1:1087;export https_proxy=http://127.0.0.1:1087" //会话全局设置
 alias unproxy="unset http_proxy;unset https_proxy" //撤销当前会话的http_proxy代理
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
